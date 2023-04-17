@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#000;
+}
+ul{
+    list-style: none;
+}
+:root {
+    --container-width: 1150px;
+    --container-left-width:750px;
+    --container-right-width: 360px;
+    --color-orange: #FAA21B;
+    --color-gray: #646464;
+}
+ /* body div {
+   /*Định dạng này chỉ để test layout 
+    border:1px solid black;
+    margin:5px;
+    padding:5px;
+}*/
+img {
+    width:100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+}
+.container-full {
+}
+.bg-orange {
+    background-color:var(--color-orange);
+}
+.bg-black {
+    margin-top: 900px;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+}
+
+/* HEADER */
+#header {    
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#hashtag {
+    width: 800px;
+    height: 25px;
+    float: right;
+    margin: 30px 10px 0 0;
+    padding: 3px 0 0 0;
+}
+#hashtag ul {    
+  padding-left: 300px;
+}
+#hashtag li {
+   display: inline-block;
+   border: #646464 solid 1px;
+   text-align: center;
+   border-radius: 10px;
+   margin-left: 10px;
+   padding: 0 10px 0 10px;
+   font-size: 10px;
+}
+#hashtag span {
+    color: #FAA21B;
+    font-size: 10px;
+}
+
+/* MENU */
+#menu {
+    width: 1000px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#menu > ul {
+    margin: 0 0 0 50px;
+    text-align: center;
+    line-height: 30px;
+}
+#menu > ul > li {
+    display: inline-block;
+    margin-right: 90px;
+    transition: 0.1 background-color;
+}
+#menu > ul > li:hover {
+    background-color: rgba(196, 196, 13, 0.878);
+}
+#menu a {
+    color: white;
+}
+
+/* CONTENT LAYOUT */
+.content-left {
+    width: 650px;
+    height: 1000px;
+    float: left;
+}
+.content-right {
+    width: 350px;
+    height: 1000px;
+    float: right;
+}
+.row {
+    width: 650px;
+    height: 300px;
+}
+.row2{
+    width: 650px;
+    height: 200px;
+}.row3{
+    width: 650px;
+    height: 150px;
+}
+.row4{
+    width: 650px;
+    height: 150px;
+}
+.row5{
+    width: 650px;
+    height: 150px;
+}
+.row3 .column-1{
+    height: 150px;
+}
+.row3 .column-2{
+    height: 150px;
+}
+.row4 .column-1{
+    height: 150px;
+}
+.row4 .column-2{
+    height: 150px;
+}
+.row5 .column-1{
+    height: 150px;
+}
+.row5 .column-2{
+    height: 150px;
+}
+.column-1, .column-2, .column-3 {
+    margin-right: 10px;
+}
+.column-1 {
+    width: 200px;
+    height: 200px;
+    float:left
+}
+.column-1 img.ao{
+    height: 225.14px;
+}
+.column-2 {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.content-right .row1{
+    width: 300px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.content-right .row1 .column-3 {
+    width: 300px;
+    height: 350px;
+}
+.content-right .row1 .column-3 img{
+    width: 300px;
+    height: 350px;
+}
+.content-right .row2 {
+    width: 270px;
+    height: 300px;
+}
+.content-right .row2 .column-3 {
+    width: 270px;
+    height: 170px;
+}
+.content-right .row2 .column-2 {
+    width: 280px;
+    height: 50px;
+    font-size: 10px;
+}
+.content-right .row2 .column-2 h2 {
+    margin-bottom: 20px;
+}
+.content-right .row2 .column-2 p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.content-right .row3 {
+    width: 400px;
+    height: 100px;
+}
+.content-right .row3 .column-1 {
+    width: 100px;
+    height: 100px;
+}
+.content-right .row3 .column-2 {
+    width: 200px;
+    height: 100px;
+}
+.content-right .row3 .column-2 p {
+  font-size: 12px;
+}
+.content-right .row3 .column-1 img{
+    width: 100px;
+    height: 50px;
+}
+/* FOOTER */
+#footer {
+    width: 1000px;
+    height: 250px;
+}
+#footer .row {
+    width: 1000px;
+    height: 250px;
+    padding: 30px 0 0 0;
+    border-bottom: #646464 solid 1px;
+}
+#footer .row  .column-2{
+    width: 200px;
+    height: 200px;
+    margin-right: 130px;
+}
+#footer .row  .column-1{
+    width: 300px;
+    height: 100px;
+    margin-right: 20px;
+}
+#footer .row  .column-1 li{
+    font-size: 10px;
+    color: white;
+}
+#footer .row2 {
+    width: 1000px;
+   height: 50px;
+}
+#footer .row2 .column-3 {
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+}
+/* ANOTHER STYLES */
+.section-title {
+    font-size: 20px;
+    border-left: 3px solid orange;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.post-content {
+    display:flex;
+    flex-direction: row;
+}
